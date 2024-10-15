@@ -1,0 +1,10 @@
+#Question 2
+#Name: Darragh Crowley
+print("Welcome to Temperature Alert System")
+temp = input("Enter temperature value in degrees Celsius:")
+if temp <= "20" :
+    print("Too cold. Turn up heating.")
+elif temp >= "20" and temp <="24" :
+    print("Temperature is just right.")
+else:
+    print("Too warm. Turn down the heating")
