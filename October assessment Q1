@@ -1,0 +1,20 @@
+#Question 1
+#Student Name:Darragh Crowley
+ #This calculator can only add and subtract
+name = input("Please enter your name:")
+print("Hello" , name ,".")
+print("Welcome to the addition and subtraction calculator.")
+num1 = int(input("Please enter a number to be added or subtracted:"))
+num2 = int(input("Please enter another number to be added or subtracted:"))
+ 
+print("Do you want me to (a)dd or (s)ubtract? ")
+choice = input()
+#choice.lower to make any input lowercase
+choice = (choice.lower())
+if choice == "a":
+    print( num1 , "+" , num2 , "=" , num1 + num2 )
+elif choice == "s":
+    print(num1 , "-" , num2 , "=" , num1 - num2)
+else:
+    print("Invalid option")
+    print("Do you want to (a)dd or (s)ubract?")
