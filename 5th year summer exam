@@ -1,0 +1,63 @@
+#5th year comp sci summer exam
+#Q16_A_OL
+#Name: Darragh Crowley
+
+value_small_containers = 0.15
+
+number_small_containers = int(input("Please enter how many small containers you are returning:"))
+# (i)
+value = value_small_containers*number_small_containers
+print("The total value of your small containers was: €", value)
+
+#(ii)
+value_large_containers = 0.25
+number_large_containers = int(input("Please enter how many large containers you are returning:"))
+value_large = value_large_containers*number_large_containers
+print("The total value of your large containers was: €", value_large)
+
+#(iii)
+total = value+value_large
+print("Your grand total was:€", total)
+
+#(iv)
+
+bill = float(input("Please enter your shopping bill: "))
+new_cost = bill-total
+print("Your shopping bill with the deposit return is:€" , new_cost)
+
+#Question_16_B_HL
+#Name: Darragh Crowley
+
+import random
+print("Welcome to my shop")
+total = 0
+item_list = []
+item_prices = []
+
+while True:
+    item = input("Please enter the item:")
+    if item == "stop":
+        break
+    price = int(input("Please enter the price of the item:€"))
+    total = price+total
+    print("Your current total is :€" , total)
+    item_list.append(item)
+    item_prices.append(price)
+
+print("Your items are:" , item_list)
+print("The prices are:" , item_prices)
+print("Grand total:€" ,total)
+
+#(ii)
+
+check = random.choice(item_list)
+
+print("Your random item to be checked is:", check )
+
+#(iii)
+num = (max(item_prices))
+position= (item_prices.index(num))
+
+
+print("The most expensive item is: " , )
+print("The cheapest item is:",)
